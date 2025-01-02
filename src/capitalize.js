@@ -3,9 +3,9 @@ const capitalize = (str) => {
     return '';
   }
   
-  const [firstChar, ...restChars] = str;
+  const [firstChar] = str;
 
-  return `${firstChar.toUpperCase()}${restChars.join('')}`;
+  return `${firstChar.toUpperCase()}${str.slice(1)}`;
 };
 
 export default capitalize;
